@@ -46,10 +46,10 @@ app.layout = html.Div([
                         'margin-left': '0'
                     }
                 )
-            ], width=4),
+            ]),
             dbc.Col([
                 dcc.Graph(id='map', figure=mapbox, style={'height': '500px'})
-            ], width=8)
+            ])
         ])
     ])
 ])
@@ -168,4 +168,4 @@ def update_weather_graph(clickData, active_tab, range_value):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
